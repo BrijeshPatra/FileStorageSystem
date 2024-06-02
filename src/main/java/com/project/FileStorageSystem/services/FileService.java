@@ -1,12 +1,10 @@
 package com.project.FileStorageSystem.services;
 
-import com.project.FileStorageSystem.entities.File;
-import com.project.FileStorageSystem.entities.User;
-import com.project.FileStorageSystem.repositories.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

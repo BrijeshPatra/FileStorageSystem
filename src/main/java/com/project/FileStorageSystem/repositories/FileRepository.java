@@ -1,7 +1,7 @@
 package com.project.FileStorageSystem.repositories;
 
-import com.project.FileStorageSystem.entities.File;
 import com.project.FileStorageSystem.entities.User;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

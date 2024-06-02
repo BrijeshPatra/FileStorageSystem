@@ -1,10 +1,8 @@
 package com.project.FileStorageSystem.entities;
 
-import jakarta.persistence.*;
-import lombok.Data;
+import javax.persistence.*;
 
 @Entity
-@Data
 public class File {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,4 +15,48 @@ public class File {
     @ManyToOne
     @JoinColumn(name = "owner_id")
     private User owner;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public Long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(Long ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public int getVersion() {
+        return version;
+    }
+
+    public void setVersion(int version) {
+        this.version = version;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
 }
